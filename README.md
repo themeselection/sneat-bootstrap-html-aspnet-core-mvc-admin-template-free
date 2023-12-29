@@ -26,7 +26,7 @@ Build premium quality applications with ease. Use our innovative [Aspnet Core MV
 
 ## Installation ⚒️
 
-Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/net-core-mvc-init-installation.html) our docs for installation guide.
+Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/net-core-mvc-init-installation.html) our docs for the installation guide.
 
 ## What's Included 📦
 
@@ -51,7 +51,7 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 - Extended UI
   - Perfect Scrollbar
   - Text Divider
-- Boxicon
+- Box icon
 - Form Elements
   - Basic Inputs
   - Input Groups
@@ -71,9 +71,9 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 | Default Theme                                                                            | Default, Semi Dark & Bordered Themes                                                                                               |
 | Fixed Layout(Menu)                                                                       | Fixed & Static Layout(Menu)                                                                                                        |
 | 1 Simple Dashboard                                                                       | 5 Niche Dashboards                                                                                                                 |
-| -                                                                                        | Multiple Ready Applications like Calendar, Invoice, Users List, Users View, Roles and Permission,Transactions(CRUD) etc.           |
+| -                                                                                        | Multiple Ready Applications like Calendar, Invoice, Users List, Users View, Roles and Permission, Transactions(CRUD) etc.           |
 | Simple From Elements                                                                     | Advance form elements, validation & form wizard                                                                                    |
-| Basic Cards                                                                              | Basic, Advance, Statistics, Analytics, Gamification and Actions Cards                                                              |
+| Basic Cards                                                                              | Basic, Advanced, Statistics, Analytics, Gamification, and Actions Cards                                                              |
 | Basic User Interface(Components)                                                         | Advance and Custom User Interfaces(Components)                                                                                     |
 | Two Extended Components                                                                  | Twelve Ready to use Extended Components                                                                                            |
 | -                                                                                        | Quick Search - Quickly navigate between pages (w/ hotkey support)                                                                  |
@@ -85,7 +85,7 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 | 1 Chart Library                                                                          | 2 Chart Libraries                                                                                                                  |
 | -                                                                                        | Multiple Navbar & Menu Options                                                                                                     |
 | -                                                                                        | Starter-kit                                                                                                                        |
-| -                                                                                        | Internationalization support                                                                                                       |
+| -                                                                                        | Internationalization support, Docker support                                                                                                       |
 | -                                                                                        | RTL Support                                                                                                                        |
 | Regular Support                                                                          | Priority Support                                                                                                                   |
 | Detailed Documentation                                                                   | Detailed Documentation                                                                                                             |
