@@ -1,0 +1,65 @@
+@inject IHttpContextAccessor httpContextAccessor
+
+<!DOCTYPE html>
+<html lang="en"
+  class='light-style layout-menu-fixed'
+  data-theme="theme-default" data-assets-path='@((httpContextAccessor.HttpContext?.Request.PathBase ?? "") + "/")'
+  data-framework="aspnetcore-mvc"
+  data-template='vertical-menu-aspnet-core-mvc-template-free'>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+  @{
+        string title = ViewData["title"] as string ?? "";
+        string appName = TempData.Peek("appName") as string ?? "";
+        string productPage = TempData.Peek("productPage") as string ?? "";
+    }
+  <title>@title | @appName - Asp.Net Core MVC Free Admin Template</title>
+  <meta name="description" content="" />
+
+  <!-- Canonical SEO -->
+  <link rel="canonical" href='@productPage'>
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="~/img/favicon/favicon.ico" />
+
+  <!-- Core Styles -->
+  @await Html.PartialAsync("Sections/_Styles")
+
+  <!-- Vendor Styles -->
+  @RenderSection("VendorStyles", required: false)
+
+  <!-- Page Styles -->
+  @RenderSection("PageStyles", required: false)
+
+  <!-- Include Scripts for customizer, helper, analytics, config -->
+  @await Html.PartialAsync("Sections/_ScriptsIncludes")
+</head>
+
+<body>
+  <!-- Layout Content -->
+  @RenderBody()
+  <!--/ Layout Content -->
+
+  <!-- Core Scripts -->
+  @await Html.PartialAsync("Sections/_Scripts")
+
+  <!-- Vendor Scripts -->
+  @RenderSection("VendorScripts", required: false)
+
+
+  
+
+  <!-- Main JS-->
+  <script src='~/js/main.js'></script>
+
+  <!-- Page Scripts-->
+  @RenderSection("PageScripts", required: false)
+
+  <!-- Place this tag in your head or just before your close body tag. -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+</body>
+
+</html>

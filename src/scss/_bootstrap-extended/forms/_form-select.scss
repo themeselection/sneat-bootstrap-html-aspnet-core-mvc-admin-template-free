@@ -1,0 +1,11 @@
+// Select
+// *******************************************************************************
+
+.form-select {
+  background-clip: padding-box;
+  &:hover {
+    &:not([disabled]):not([focus]) {
+      border-color: $input-border-hover-color;
+    }
+  }
+}

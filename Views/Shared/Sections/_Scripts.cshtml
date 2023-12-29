@@ -1,0 +1,17 @@
+<environment include="Development">
+  <script src="~/vendor/libs/jquery/jquery.js"></script>
+  <script src="~/vendor/libs/popper/popper.js"></script>
+  <script src="~/vendor/js/bootstrap.js"></script>
+  <!-- `perfect-scrollbar` library required by SideNav plugin -->
+  <script src="~/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+  <script src="~/vendor/js/menu.js"></script>
+  <script src="~/js/site.js"></script>
+</environment>
+<environment exclude="Development">
+  <script src="~/vendor/libs/jquery/jquery.js" asp-append-version="true"></script>
+  <script src="~/vendor/libs/popper/popper.js" asp-append-version="true"></script>
+  <script src="~/vendor/js/bootstrap.js" asp-append-version="true"></script>
+  <script src="~/vendor/libs/perfect-scrollbar/perfect-scrollbar.js" asp-append-version="true"></script>
+  <script src="~/vendor/js/menu.js" asp-append-version="true"></script>
+  <script src="~/js/site.js" asp-append-version="true"></script>
+</environment>
