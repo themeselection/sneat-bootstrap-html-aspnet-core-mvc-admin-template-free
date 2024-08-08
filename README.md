@@ -1,6 +1,6 @@
 <p align="center">
    <a href="https://themeselection.com/item/sneat-free-aspnet-core-mvc-admin-template/" target="_blank">
-      <img src="https://user-images.githubusercontent.com/749684/150333149-805037bc-8874-4a1f-876a-61a9683f8ef5.png" alt="sneat-logo" width="30px" height="auto">
+      <img src="https://cdn.themeselection.com/ts-assets/sneat/logo/logo.png" alt="sneat-logo" width="60px" height="auto">
    </a>
 </p>
 
@@ -14,7 +14,7 @@
 
 ![GitHub](https://img.shields.io/github/license/themeselection/sneat-bootstrap-html-aspnet-core-mvc-admin-template-free) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/themeselection/sneat-bootstrap-html-aspnet-core-mvc-admin-template-free) ![GitHub issues](https://img.shields.io/github/issues/themeselection/sneat-bootstrap-html-aspnet-core-mvc-admin-template-free) ![GitHub closed issues](https://img.shields.io/github/issues-closed/themeselection/sneat-bootstrap-html-aspnet-core-mvc-admin-template-free) ![Twitter Follow](https://img.shields.io/twitter/follow/Theme_Selection?style=social)
 
-<kbd>[![Sneat - Free Bootstrap 5 .Net Core MVC Admin Template Demo Screenshot](https://cdn.jsdelivr.net/gh/themeselection/ts-assets/sneat/sneat-bootstrap-aspnet-core-mvc-admin-template-free/banner/banner.png)](https://themeselection.com/item/sneat-free-aspnet-core-mvc-admin-template/)</kbd>
+<kbd>[![Sneat - Free Bootstrap 5 .Net Core MVC Admin Template Demo Screenshot](https://cdn.themeselection.com/ts-assets/sneat/sneat-bootstrap-aspnet-core-mvc-admin-template-free/banner/banner.png)](https://themeselection.com/item/sneat-free-aspnet-core-mvc-admin-template/)</kbd>
 
 ## Introduction 🚀
 
@@ -26,7 +26,7 @@ Build premium quality applications with ease. Use our innovative [Aspnet Core MV
 
 ## Installation ⚒️
 
-Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/net-core-mvc-init-installation.html) our docs for the installation guide.
+Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-template/documentation/net-core-mvc-init-installation.html) our docs for installation guide.
 
 ## What's Included 📦
 
@@ -51,7 +51,7 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 - Extended UI
   - Perfect Scrollbar
   - Text Divider
-- Box icon
+- Boxicon
 - Form Elements
   - Basic Inputs
   - Input Groups
@@ -71,9 +71,9 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 | Default Theme                                                                            | Default, Semi Dark & Bordered Themes                                                                                               |
 | Fixed Layout(Menu)                                                                       | Fixed & Static Layout(Menu)                                                                                                        |
 | 1 Simple Dashboard                                                                       | 5 Niche Dashboards                                                                                                                 |
-| -                                                                                        | Multiple Ready Applications like Calendar, Invoice, Users List, Users View, Roles and Permission, Transactions(CRUD) etc.           |
+| -                                                                                        | Multiple Ready Applications like Calendar, Invoice, Users List, Users View, Roles and Permission,Transactions(CRUD) etc.           |
 | Simple From Elements                                                                     | Advance form elements, validation & form wizard                                                                                    |
-| Basic Cards                                                                              | Basic, Advanced, Statistics, Analytics, Gamification, and Actions Cards                                                              |
+| Basic Cards                                                                              | Basic, Advance, Statistics, Analytics, Gamification and Actions Cards                                                              |
 | Basic User Interface(Components)                                                         | Advance and Custom User Interfaces(Components)                                                                                     |
 | Two Extended Components                                                                  | Twelve Ready to use Extended Components                                                                                            |
 | -                                                                                        | Quick Search - Quickly navigate between pages (w/ hotkey support)                                                                  |
@@ -85,7 +85,7 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 | 1 Chart Library                                                                          | 2 Chart Libraries                                                                                                                  |
 | -                                                                                        | Multiple Navbar & Menu Options                                                                                                     |
 | -                                                                                        | Starter-kit                                                                                                                        |
-| -                                                                                        | Internationalization support, Docker support                                                                                                       |
+| -                                                                                        | Internationalization support                                                                                                       |
 | -                                                                                        | RTL Support                                                                                                                        |
 | Regular Support                                                                          | Priority Support                                                                                                                   |
 | Detailed Documentation                                                                   | Detailed Documentation                                                                                                             |
