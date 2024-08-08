@@ -15,10 +15,9 @@
   }
   &:focus {
     border-width: $input-focus-border-width;
-      padding: calc($form-select-padding-y - $input-focus-border-width)
-        calc($form-select-padding-x * 3 - $input-focus-border-width)
-        calc($form-select-padding-y - $input-focus-border-width)
-        calc($form-select-padding-x - $input-focus-border-width);
+    padding: calc($form-select-padding-y - $input-focus-border-width)
+      calc($form-select-padding-x * 3 - $input-focus-border-width)
+      calc($form-select-padding-y - $input-focus-border-width) calc($form-select-padding-x - $input-focus-border-width);
     background-position: right calc($form-select-padding-x - 1px) center;
   }
   &.form-select-lg {

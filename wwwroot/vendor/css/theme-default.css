@@ -302,7 +302,6 @@ button.list-group-item-primary.active {
 .show > .btn-outline-primary.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: #696cff;
 }
 
 .dropdown-item:not(.disabled).active, .dropdown-item:not(.disabled):active {

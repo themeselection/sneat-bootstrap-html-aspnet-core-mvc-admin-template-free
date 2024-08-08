@@ -297,10 +297,10 @@
         border-left: $nav-tabs-border-width solid $nav-tabs-border-color;
       }
     }
-    border-right: $border-width solid $border-color;
-    & .nav-link:not(.active):hover {
-      border-right: 2px solid $nav-pills-link-hover-bg !important;
-      padding-right: calc($nav-link-padding-x - 0.125rem);
+      border-right: $border-width solid $border-color;
+      & .nav-link:not(.active):hover {
+        border-right: 2px solid $nav-pills-link-hover-bg !important;
+        padding-right: calc($nav-link-padding-x - 0.125rem);
     }
   }
   > .nav .nav-item,

@@ -7729,7 +7729,6 @@ label.btn {
 .show > .btn-outline-secondary.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: #8592a3;
 }
 
 .btn-success {
@@ -7809,7 +7808,6 @@ label.btn {
 .show > .btn-outline-success.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: #71dd37;
 }
 
 .btn-info {
@@ -7889,7 +7887,6 @@ label.btn {
 .show > .btn-outline-info.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: #03c3ec;
 }
 
 .btn-warning {
@@ -7969,7 +7966,6 @@ label.btn {
 .show > .btn-outline-warning.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: #ffab00;
 }
 
 .btn-danger {
@@ -8049,7 +8045,6 @@ label.btn {
 .show > .btn-outline-danger.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: #ff3e1d;
 }
 
 .btn-light {
@@ -8129,7 +8124,6 @@ label.btn {
 .show > .btn-outline-light.dropdown-toggle .badge {
   background: #22303e;
   border-color: #22303e;
-  color: #dbdee0;
 }
 
 .btn-dark {
@@ -8209,7 +8203,6 @@ label.btn {
 .show > .btn-outline-dark.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: #2b2c40;
 }
 
 .btn-gray {
@@ -8289,7 +8282,6 @@ label.btn {
 .show > .btn-outline-gray.dropdown-toggle .badge {
   background: #fff;
   border-color: #fff;
-  color: rgba(34, 48, 62, 0.5);
 }
 
 .btn-icon {
@@ -9118,6 +9110,17 @@ li:not(:first-child) .dropdown-item, .dropdown-menu .dropdown-item:not(:first-ch
 .form-control:hover:not([disabled]):not([focus]) {
   border-color: #7a838b;
 }
+.input-group .form-control[type=number] {
+  line-height: 1.375rem;
+  min-height: 2.375rem;
+}
+.input-group-lg .form-control[type=number] {
+  line-height: 1.5rem;
+  min-height: 3rem;
+}
+.input-group-sm .form-control[type=number] {
+  min-height: 1.875rem;
+}
 .form-control:focus {
   border-width: 2px;
   padding: calc(0.543rem - 2px) calc(0.9375rem - 2px);
@@ -9208,6 +9211,9 @@ li:not(:first-child) .dropdown-item, .dropdown-menu .dropdown-item:not(:first-ch
 }
 .form-select.form-select-sm:focus {
   padding: calc(0.3165rem - 2px) calc(2.4375rem - 2px) calc(0.3165rem - 2px) calc(0.8125rem - 2px);
+}
+.form-select[multiple]:focus {
+  padding-inline-end: 0.875rem !important;
 }
 
 .form-range::-webkit-slider-thumb {
