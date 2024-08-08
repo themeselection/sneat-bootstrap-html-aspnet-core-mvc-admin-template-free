@@ -18,11 +18,11 @@
 
 ## Introduction 🚀
 
-If you’re a developer looking for the most Powerful & comprehensive [**Free Bootstrap 5 ASPNET Core MVC Admin Template**](https://themeselection.com/item/sneat-bootstrap-html-aspnet-core-mvc-admin-template-free/) built for developers, rich with features, and highly customizable look no further than Sneat. We’ve followed the highest industry standards to bring you the very best admin template that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
+If you’re a developer looking for the most Powerful & comprehensive [**Free Bootstrap 5 ASPNET Core MVC Admin Template**](https://themeselection.com/item/sneat-free-aspnet-core-mvc-admin-template/) built for developers, rich with features, and highly customizable look no further than Sneat. We’ve followed the highest industry standards to bring you the very best admin template that is not only fast and easy to use but highly scalable. Offering ultimate convenience and flexibility, you’ll be able to build whatever application you want with very little hassle.
 
-Build premium quality applications with ease. Use our innovative [Aspnet Core MVC Bootstrap admin template](https://themeselection.com/item/category/bootstrap-admin-templates/) to create eye-catching, high-quality WebApps. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
+Build premium quality applications with ease. Use our innovative [Aspnet Core MVC Bootstrap admin template](https://themeselection.com/item/category/asp-net-dashboard/) to create eye-catching, high-quality WebApps. Your apps will be completely responsive, ensuring they’ll look stunning and function flawlessly on desktops, tablets, and mobile devices.
 
-[View Demo](https://demos.themeselection.com/sneat-bootstrap-html-aspnet-core-mvc-admin-template-free/html/)
+[View Demo](https://demos.themeselection.com/sneat-aspnet-core-mvc-admin-template-free/html/)
 
 ## Installation ⚒️
 
@@ -72,7 +72,7 @@ Please [visit](https://demos.themeselection.com/sneat-bootstrap-html-admin-templ
 | Fixed Layout(Menu)                                                                       | Fixed & Static Layout(Menu)                                                                                                        |
 | 1 Simple Dashboard                                                                       | 5 Niche Dashboards                                                                                                                 |
 | -                                                                                        | Multiple Ready Applications like Calendar, Invoice, Users List, Users View, Roles and Permission,Transactions(CRUD) etc.           |
-| Simple From Elements                                                                     | Advance form elements, validation & form wizard                                                                                    |
+| Simple Form Elements                                                                     | Advance form elements, validation & form wizard                                                                                    |
 | Basic Cards                                                                              | Basic, Advance, Statistics, Analytics, Gamification and Actions Cards                                                              |
 | Basic User Interface(Components)                                                         | Advance and Custom User Interfaces(Components)                                                                                     |
 | Two Extended Components                                                                  | Twelve Ready to use Extended Components                                                                                            |
@@ -166,22 +166,22 @@ For free products, enjoy community support via GitHub issues. Upgrade to Premium
 
 **[ThemeSelection](https://themeselection.com/)** provides Selected high quality, modern design, professional and easy-to-use **Fully Coded Dashboard Templates & UI Kits** to create your applications faster!
 
-- [Bootstrap Admin Templates](https://themeselection.com/products/category/bootstrap-admin-templates/)
-- [VueJS Admin Templates](https://themeselection.com/products/category/vuejs-admin-templates/)
-- [Laravel Admin Templates](https://themeselection.com/products/category/laravel-admin-templates/)
+- [Bootstrap Admin Templates](https://themeselection.com/item/category/bootstrap-admin-templates/)
+- [VueJS Admin Templates](https://themeselection.com/item/category/vuejs-admin-templates/)
+- [Laravel Admin Templates](https://themeselection.com/item/category/laravel-admin-templates/)
 - [Django Admin Templates](https://themeselection.com/item/category/django-admin-template/)
 - [React (NextJS) Admin Templates](https://themeselection.com/item/category/next-js-admin-template/)
 - [ASP.Net Core Admin Templates](https://themeselection.com/item/category/asp-net-dashboard/)
-- [Free UI Kits](https://themeselection.com/products/category/free-ui-kits/)
+- [Free UI Kits](https://themeselection.com/item/category/free-ui-kits/)
 
-If you want to [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/) like Sneat Aspnet Core MVC Free then do visit [ThemeSelection](https://themeselection.com/).
+If you want to [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/) like Sneat Aspnet Core MVC Free then do visit [ThemeSelection](https://themeselection.com/).
 
 ## Useful Links 🎁
 
-- [Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)
-- [Freebies](https://themeselection.com/products/category/download-free-admin-templates/)
-- [Download Free Admin Templates](https://themeselection.com/products/category/download-free-admin-templates/)
-- [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
+* [Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)
+* [Freebies](https://themeselection.com/item/category/free-admin-templates/)
+* [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
+* [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
 
 ## Social Media :earth_africa:
 
