@@ -179,17 +179,15 @@ If you want to [Free Admin Templates](https://themeselection.com/item/category/f
 ## Useful Links 🎁
 
 - [Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)
-- [Freebies](https://themeselection.com/item/category/freebies/)
-- [Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
+- [Freebies](https://themeselection.com/item/category/free-admin-templates/)
+- [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
 - [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
-- [FlyonUI](https://flyonui.com/)
-- [JetShip](https://demos.themeselection.com/jetship-laravel-starter-kit/)
 
 ## Social Media :earth_africa:
 
-- [X](https://x.com/Theme_Selection)
+- [x](https://x.com/Theme_Selection)
 - [Facebook](https://www.facebook.com/ThemeSelections/)
 - [Pinterest](https://www.pinterest.com/themeselection/)
 - [Instagram](https://www.instagram.com/themeselection/)
-- [Discord](https://discord.gg/kBHkY7DekX)
+- [Discord](https://discord.com/invite/kBHkY7DekX)
 - [YouTube](https://www.youtube.com/channel/UCuryo5s0CW4aP83itLjIdZg)

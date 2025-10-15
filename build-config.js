@@ -1,18 +1,7 @@
 module.exports = {
   base: {
     // Excludes folders relative to `root` directory.
-    exclude: [
-      'html',
-      'html-starter',
-      'html-demo',
-      'dist',
-      'build',
-      'assets',
-      'tasks',
-      'node_modules',
-      '_temp',
-      'node-script'
-    ]
+    exclude: ['node_modules', 'fonts']
   },
   development: {
     // Build path can be both relative or absolute.
@@ -26,11 +15,7 @@ module.exports = {
     sourcemaps: false,
 
     // https://webpack.js.org/configuration/devtool/#development
-    devtool: 'eval-source-map',
-
-    // Remove sourcemaps, *.dist.js and *.dist.css files before build
-    cleanDist: true,
-    fastDev: true
+    devtool: 'eval-source-map'
   },
   production: {
     // Build path can be both relative or absolute.
@@ -45,10 +30,6 @@ module.exports = {
 
     sourcemaps: false,
     // https://webpack.js.org/configuration/devtool/#production
-    devtool: '#source-map',
-
-    // Remove sourcemaps, *.dist.js and *.dist.css files before build
-    cleanDist: true,
-    fastDev: false
+    devtool: '#source-map'
   }
 };

@@ -5,6 +5,12 @@
 'use strict';
 
 let menu, animate;
+document.addEventListener('DOMContentLoaded', function () {
+  // class for ios specific styles
+  if (navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+    document.body.classList.add('ios');
+  }
+});
 
 (function () {
   // Initialize menu
@@ -116,3 +122,7 @@ let menu, animate;
   // Auto update menu collapsed/expanded based on the themeConfig
   window.Helpers.setCollapsed(true, false);
 })();
+// Utils
+function isMacOS() {
+  return /Mac|iPod|iPhone|iPad/.test(navigator.userAgent);
+}

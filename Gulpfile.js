@@ -66,10 +66,7 @@ const buildCssTask = function (cb) {
           gulpIf(
             conf.minify,
             `sass --load-path=node_modules/ src/site.scss:${conf.distPath}/css/site.css src/scss:${conf.distPath}/vendor/css src/fonts:${conf.distPath}/vendor/fonts src/libs:${conf.distPath}/vendor/libs --style compressed --no-source-map`,
-            gulpIf(
-              conf.fastDev,
-              `sass --load-path=node_modules/  src/site.scss:${conf.distPath}/css/site.css src/scss:${conf.distPath}/vendor/css src/scss/pages:${conf.distPath}/vendor/css/pages src/fonts:${conf.distPath}/vendor/fonts src/libs:${conf.distPath}/vendor/libs --no-source-map`
-            )
+            `sass --load-path=node_modules/ src/site.scss:${conf.distPath}/css/site.css src/scss:${conf.distPath}/vendor/css src/fonts:${conf.distPath}/vendor/fonts src/libs:${conf.distPath}/vendor/libs --no-source-map`
           ),
           function (err) {
             cb(err);
@@ -146,52 +143,35 @@ const pageJsTask = function () {
     .pipe(dest(conf.distPath + `/js`));
 };
 
-// Build fonts
+// Iconify task
 // -------------------------------------------------------------------------------
+const buildIconifyTask = function (cb) {
+  // Create required directories without copying files
+  const fs = require('fs');
+  const directories = ['./src/fonts/iconify', './src/fonts'];
 
-const FONT_TASKS = [
-  {
-    name: 'boxicons',
-    path: 'node_modules/boxicons/fonts/*'
-  }
-].reduce(function (tasks, font) {
-  const functionName = `buildFonts${font.name.replace(/^./, m => m.toUpperCase())}Task`;
-  const taskFunction = function () {
-    // return src(root(font.path))
-    return (
-      src(font.path)
-        // .pipe(dest(normalize(path.join(conf.distPath, 'fonts', font.name))))
-        .pipe(dest(path.join(conf.distPath + `/vendor/`, 'fonts', font.name)))
-    );
-  };
-
-  Object.defineProperty(taskFunction, 'name', {
-    value: functionName
+  directories.forEach(dir => {
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
   });
 
-  return tasks.concat([taskFunction]);
-}, []);
-
-// Formula module requires KaTeX - Quill Editor
-const KATEX_FONT_TASK = [
-  {
-    name: 'katex',
-    path: 'node_modules/katex/dist/fonts/*'
-  }
-].reduce(function (tasks, font) {
-  const functionName = `buildFonts${font.name.replace(/^./, m => m.toUpperCase())}Task`;
-  const taskFunction = function () {
-    return src(font.path).pipe(dest(path.join(conf.distPath, 'vendor/libs/quill/fonts')));
-  };
-
-  Object.defineProperty(taskFunction, 'name', {
-    value: functionName
+  const iconify = require('child_process').spawn('node', ['./src/fonts/iconify/iconify.js'], {
+    cwd: __dirname
   });
 
-  return tasks.concat([taskFunction]);
-}, []);
+  iconify.stdout.on('data', data => {
+    console.log(data.toString());
+  });
 
-const buildFontsTask = parallel(FONT_TASKS, KATEX_FONT_TASK);
+  iconify.stderr.on('data', data => {
+    console.error(data.toString());
+  });
+
+  iconify.on('close', code => {
+    cb();
+  });
+};
 
 // Clean build directory
 // -------------------------------------------------------------------------------
@@ -222,7 +202,7 @@ const watchTask = function () {
 // -------------------------------------------------------------------------------
 const buildJsTask = series(webpackJsTask, pageJsTask);
 
-const buildTasks = [buildCssTask, buildJsTask, buildFontsTask];
+const buildTasks = [buildCssTask, buildJsTask, buildIconifyTask];
 const buildTask = conf.cleanDist
   ? series(cleanAllTask, parallel(buildTasks))
   : series(cleanAllTask, cleanSourcemapsTask, parallel(buildTasks));
@@ -234,7 +214,7 @@ module.exports = {
   clean: cleanAllTask,
   'build:js': buildJsTask,
   'build:css': buildCssTask,
-  'build:fonts': buildFontsTask,
+  'build:iconify': buildIconifyTask,
   build: buildTask,
   watch: watchTask
 };
