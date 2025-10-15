@@ -3,20 +3,25 @@
   ViewData["containerNav"] = (ViewData["containerNav"] ??= "container-fluid");
 }
 
+<!-- Footer -->
 <footer class="content-footer footer bg-footer-theme">
   <div class="@ViewData["containerNav"]">
     <div class="footer-container d-flex align-items-center justify-content-between py-4 flex-md-row flex-column">
-      <div class="text-body">
-        © <script>
-        document.write(new Date().getFullYear())
-        </script>, made with ❤️ by <a href='@TempData.Peek("authorUrl")' target="_blank" class="footer-link fw-medium">@TempData.Peek("authorName")</a>
+      <div class="mb-2 mb-md-0">
+        &#169;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        , made with ❤️ by <a href="@TempData.Peek("authorUrl")" target="_blank" class="footer-link">@TempData.Peek("authorName")</a>
       </div>
       <div class="d-none d-lg-inline-block">
-        <a href='@TempData.Peek("licenseUrl")' class="footer-link me-4" target="_blank">License</a>
-        <a href='@TempData.Peek("authorUrl")' target="_blank" class="footer-link me-4">More Themes</a>
-        <a href='@TempData.Peek("documentation")' target="_blank" class="footer-link me-4">Documentation</a>
-        <a href='@TempData.Peek("support")' target="_blank" class="footer-link d-none d-sm-inline-block">Support</a>
+        <a href="@TempData.Peek("adminTemplates")" target="_blank" class="footer-link me-4">Admin Templates</a>
+        <a href="@TempData.Peek("licenseUrl")" class="footer-link me-4" target="_blank">License</a>
+        <a href="@TempData.Peek("bootstrapDashboard")" target="_blank" class="footer-link me-4">Bootstrap Dashboard</a>
+        <a href="@TempData.Peek("documentation_menu_link")" target="_blank" class="footer-link me-4">Documentation</a>
+        <a href="@TempData.Peek("support")" target="_blank" class="footer-link d-none d-sm-inline-block">Support</a>
       </div>
     </div>
   </div>
 </footer>
+<!-- / Footer -->

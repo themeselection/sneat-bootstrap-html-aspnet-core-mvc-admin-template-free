@@ -15,7 +15,7 @@
 else
 {
   <nav
-  class='layout-navbar @((@ViewData["navbarDetached"] != null) ? @ViewData["navbarDetached"] : "") @((@ViewData["navbarDetached"] != null) ? @ViewData["containerNav"] : "") navbar navbar-expand-xl align-items-center bg-navbar-theme'
+  class='layout-navbar @((@ViewData["navbarDetached"] != null) ? @ViewData["navbarDetached"] : "") @((@ViewData["navbarDetached"] != null) ? @ViewData["containerNav"] : "") navbar navbar-expand-xl align-items-center'
   id="layout-navbar">
   <div class='@((@ViewData["navbarDetached"] == null) ? @ViewData["containerNav"] : "")'>
     @await Html.PartialAsync("Sections/Navbar/_NavbarPartial")

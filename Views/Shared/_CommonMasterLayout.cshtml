@@ -1,20 +1,27 @@
+@{
+  @* Compact/Fluid class *@
+  ViewData["contentType"] = ViewData["container"] is string container && container == "container-xxl" ? "layout-compact layout-menu-fixed" : "";
+}
+
 @inject IHttpContextAccessor httpContextAccessor
 
 <!DOCTYPE html>
-<html lang="en"
-  class='light-style layout-menu-fixed'
-  data-theme="theme-default" data-assets-path='@((httpContextAccessor.HttpContext?.Request.PathBase ?? "") + "/")'
-  data-framework="aspnetcore-mvc"
-  data-template='vertical-menu-aspnet-core-mvc-template-free'>
+<html lang="en" class="@(ViewData["navbarType"] is string navbarType ? navbarType : "")
+@(ViewData["menuFixed"] is string menuFixed ? menuFixed : "")
+@(ViewData["menuCollapsed"] is string menuCollapsed ? menuCollapsed : "")
+@(ViewData["contentType"] is string contentType ? contentType : "")
+@(ViewData["footerFixed"] is string footerFixed ? footerFixed : "")
+@(ViewData["customizerHidden"] is string customizerHidden ? customizerHidden : "")" dir="ltr" data-skin="default" data-bs-theme="light" data-assets-path='@((httpContextAccessor.HttpContext?.Request.PathBase ?? "") + "/")' data-template='@(("vertical-menu-template-free"))'>
 
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
 
   @{
-        string title = ViewData["title"] as string ?? "";
-        string appName = TempData.Peek("appName") as string ?? "";
-        string productPage = TempData.Peek("productPage") as string ?? "";
+    string title = ViewData["title"] as string ?? "";
+    string appName = TempData.Peek("appName") as string ?? "";
+    string productPage = TempData.Peek("productPage") as string ?? "";
     }
   <title>@title | @appName - Asp.Net Core MVC Free Admin Template</title>
   <meta name="description" content="" />

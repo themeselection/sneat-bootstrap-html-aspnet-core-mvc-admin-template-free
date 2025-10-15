@@ -23,10 +23,12 @@ const packageRegex = package => `(?:\\\\|\\/)${package}(?:\\\\|\\/).+?\\.js$`;
 
 const collectEntries = () => {
   const fileList = glob.sync(`src/!(${conf.exclude.join('|')})/**/!(_)*.@(js|es6)`) || [];
-  return fileList.reduce((entries, file) => {
-    const filePath = file.replace(/\\/g, '/');
-    return { ...entries, [filePath.replace(/^src\/|\.(?:js|es6)$/g, '')]: `./${filePath}` };
-  }, {});
+  return fileList
+    .filter(p => !/\.dist\.(?:js|css)$/.test(p))
+    .reduce((entries, file) => {
+      const filePath = file.replace(/\\/g, '/');
+      return { ...entries, [filePath.replace(/^src\/|\.(?:js|es6)$/g, '')]: `./${filePath}` };
+    }, {});
 };
 
 const babelLoader = () => ({
@@ -35,7 +37,7 @@ const babelLoader = () => ({
     presets: [['@babel/preset-env', { targets: 'last 2 versions, ie >= 10' }]],
     plugins: [
       '@babel/plugin-transform-destructuring',
-      '@babel/plugin-proposal-object-rest-spread',
+      '@babel/plugin-transform-object-rest-spread',
       '@babel/plugin-transform-template-literals'
     ],
     babelrc: false
@@ -89,19 +91,34 @@ const webpackConfig = {
       }
     ]
   },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin({
+        extractComments: false,
+        terserOptions: {
+          format: {
+            comments: false
+          },
+          compress: {
+            drop_console: true
+          }
+        }
+      })
+    ]
+  },
   plugins: [],
 
   externals: {
     jquery: 'jQuery',
     moment: 'moment',
-    // 'datatables.net': '$.fn.dataTable',
     jsdom: 'jsdom',
     velocity: 'Velocity',
     hammer: 'Hammer',
     pace: '"pace-progress"',
-    chartist: 'Chartist',
+    'cross-fetch': 'fetch',
+    // chartist: 'Chartist',
     'popper.js': 'Popper',
-
     // blueimp-gallery plugin
     './blueimp-helper': 'jQuery',
     './blueimp-gallery': 'blueimpGallery',
@@ -122,10 +139,15 @@ if (conf.sourcemaps) {
 if (process.env.NODE_ENV !== 'production' && conf.minify) {
   webpackConfig.plugins.push(
     new TerserPlugin({
-      optimization: {
-        minimize: true
+      extractComments: false,
+      terserOptions: {
+        format: {
+          comments: false
+        },
+        compress: {
+          drop_console: true
+        }
       },
-      sourceMap: conf.sourcemaps,
       parallel: true
     })
   );

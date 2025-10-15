@@ -10,10 +10,16 @@
 <div class="row">
   <div class="col-md-12">
     <div class="nav-align-top">
-      <ul class="nav nav-pills flex-column flex-md-row mb-6">
-        <li class="nav-item"><a class="nav-link active" href="javascript:void(0);"><i class="bx bx-sm bx-user me-1_5"></i> Account</a></li>
-        <li class="nav-item"><a class="nav-link" href="AccountSettingsNotifications"><i class="bx bx-sm bx-bell me-1_5"></i> Notifications</a></li>
-        <li class="nav-item"><a class="nav-link" href="AccountSettingsConnections"><i class="bx bx-sm bx-link-alt me-1_5"></i> Connections</a></li>
+      <ul class="nav nav-pills flex-column flex-md-row mb-6 gap-md-0 gap-2">
+        <li class="nav-item">
+          <a class="nav-link active" href="javascript:void(0);"><i class="icon-base bx bx-user icon-sm me-1_5"></i> Account</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AccountSettingsNotifications"><i class="icon-base bx bx-bell icon-sm me-1_5"></i> Notifications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="AccountSettingsConnections"><i class="icon-base bx bx-link-alt icon-sm me-1_5"></i> Connections</a>
+        </li>
       </ul>
     </div>
     <div class="card mb-6">
@@ -24,11 +30,11 @@
           <div class="button-wrapper">
             <label for="upload" class="btn btn-primary me-3 mb-4" tabindex="0">
               <span class="d-none d-sm-block">Upload new photo</span>
-              <i class="bx bx-upload d-block d-sm-none"></i>
+              <i class="icon-base bx bx-upload d-block d-sm-none"></i>
               <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
             </label>
             <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-              <i class="bx bx-reset d-block d-sm-none"></i>
+              <i class="icon-base bx bx-reset d-block d-sm-none"></i>
               <span class="d-none d-sm-block">Reset</span>
             </button>
 
@@ -53,7 +59,7 @@
             </div>
             <div class="col-md-6">
               <label for="organization" class="form-label">Organization</label>
-              <input type="text" class="form-control" id="organization" name="organization" value='@TempData.Peek("authorName")' />
+              <input type="text" class="form-control" id="organization" name="organization" value="@TempData.Peek("authorName")" />
             </div>
             <div class="col-md-6">
               <label class="form-label" for="phoneNumber">Phone Number</label>
@@ -171,7 +177,7 @@
             <input class="form-check-input" type="checkbox" name="accountActivation" id="accountActivation" />
             <label class="form-check-label" for="accountActivation">I confirm my account deactivation</label>
           </div>
-          <button type="submit" class="btn btn-danger deactivate-account" disabled>Deactivate Account</button>
+          <button type="submit" class="btn btn-danger deactivate-account">Deactivate Account</button>
         </form>
       </div>
     </div>

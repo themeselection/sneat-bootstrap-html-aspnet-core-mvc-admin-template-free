@@ -174,20 +174,20 @@ For free products, enjoy community support via GitHub issues. Upgrade to Premium
 - [ASP.Net Core Admin Templates](https://themeselection.com/item/category/asp-net-dashboard/)
 - [Free UI Kits](https://themeselection.com/item/category/free-ui-kits/)
 
-If you want to [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/) like Sneat Aspnet Core MVC Free then do visit [ThemeSelection](https://themeselection.com/).
+If you want to [Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/) like Sneat Aspnet Core MVC Free then do visit [ThemeSelection](https://themeselection.com/).
 
 ## Useful Links 🎁
 
-* [Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)
-* [Freebies](https://themeselection.com/item/category/free-admin-templates/)
-* [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
-* [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
+- [Vue CheatSheet](https://vue-cheatsheet.themeselection.com/)
+- [Freebies](https://themeselection.com/item/category/free-admin-templates/)
+- [Download Free Admin Templates](https://themeselection.com/item/category/free-admin-templates/)
+- [Bootstrap 5 CheatSheet](https://bootstrap-cheatsheet.themeselection.com/)
 
 ## Social Media :earth_africa:
 
-- [Twitter](https://twitter.com/Theme_Selection)
+- [x](https://x.com/Theme_Selection)
 - [Facebook](https://www.facebook.com/ThemeSelections/)
-- [Pinterest](https://pinterest.com/themeselect/)
+- [Pinterest](https://www.pinterest.com/themeselection/)
 - [Instagram](https://www.instagram.com/themeselection/)
-- [Discord](https://discord.gg/kBHkY7DekX)
+- [Discord](https://discord.com/invite/kBHkY7DekX)
 - [YouTube](https://www.youtube.com/channel/UCuryo5s0CW4aP83itLjIdZg)
