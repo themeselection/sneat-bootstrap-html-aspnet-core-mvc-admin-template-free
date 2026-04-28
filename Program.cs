@@ -1,9 +1,12 @@
+using AspnetCoreMvcFull.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddSingleton<MetricsRepository>();
 
 var app = builder.Build();
 
