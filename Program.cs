@@ -1,4 +1,5 @@
 using AspnetCoreMvcFull.Repositories;
+using AspnetCoreMvcFull.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +8,8 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<MetricsRepository>();
+builder.Services.AddHttpClient();
+builder.Services.AddScoped<FacebookAdsService>();
 
 var app = builder.Build();
 

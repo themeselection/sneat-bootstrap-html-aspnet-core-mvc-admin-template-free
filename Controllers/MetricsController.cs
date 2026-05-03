@@ -5,19 +5,12 @@ namespace AspnetCoreMvcFull.Controllers
 {
   [ApiController]
   [Route("api/[controller]")]
-  public class MetricsController : ControllerBase
+  public class MetricsController(MetricsRepository repo) : ControllerBase
   {
-    private readonly MetricsRepository _repo;
-
-    public MetricsController(MetricsRepository repo)
-    {
-      _repo = repo;
-    }
-
     [HttpGet]
     public async Task<IActionResult> Get([FromQuery] DateTime date)
     {
-      var data = await _repo.GetByDate(date);
+      var data = await repo.GetByDate(date);
       return Ok(data);
     }
   }
