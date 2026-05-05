@@ -1,6 +1,4 @@
-﻿using System.Text.Json;
-
-namespace AspnetCoreMvcFull.Services
+﻿namespace AspnetCoreMvcFull.Services
 {
   public class FacebookAdsService(
     IConfiguration config,

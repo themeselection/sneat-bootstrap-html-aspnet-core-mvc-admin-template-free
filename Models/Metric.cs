@@ -2,7 +2,7 @@ namespace AspnetCoreMvcFull.Models
 {
   public class Metric
   {
-    public string AdId { get; set; }
+    public required string AdId { get; set; }
     public DateTime ReportDate { get; set; }
     public int TotalOrders { get; set; }
     public decimal TotalRevenue { get; set; }

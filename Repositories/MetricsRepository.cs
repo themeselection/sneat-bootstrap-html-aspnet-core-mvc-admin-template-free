@@ -10,7 +10,7 @@ namespace AspnetCoreMvcFull.Repositories
 
     public async Task<IEnumerable<Metric>> GetByDate(DateTime date)
     {
-      using var connection = new SqlConnection(_connectionString);
+      await using var connection = new SqlConnection(_connectionString);
 
       const string sql =
         """
