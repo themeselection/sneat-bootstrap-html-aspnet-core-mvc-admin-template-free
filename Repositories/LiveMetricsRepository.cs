@@ -11,8 +11,7 @@ namespace AspnetCoreMvcFull.Repositories
 
     public async Task<IEnumerable<LiveMetric>> GetMetrics()
     {
-      await using var connection =
-        new SqlConnection(_connectionString);
+      await using var connection = new SqlConnection(_connectionString);
 
       return await connection.QueryAsync<LiveMetric>(
         "sp_calculate_live_metrics",

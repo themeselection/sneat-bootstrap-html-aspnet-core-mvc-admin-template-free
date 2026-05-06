@@ -11,10 +11,15 @@ builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddSingleton<MetricsRepository>();
 builder.Services.AddScoped<LiveMetricsRepository>();
-builder.Services.AddScoped<LiveMetricsRepository>();
-builder.Services.AddHttpClient();
+builder.Services.AddScoped<LiveConfigRepository>();
+builder.Services.AddScoped<LiveAdRepository>();
+builder.Services.AddScoped<ReportLogRepository>();
+builder.Services.AddScoped<LiveMetricSnapshotRepository>();
+builder.Services.AddScoped<OrdersRepository>();
 builder.Services.AddScoped<FacebookAdsService>();
 builder.Services.AddScoped<ReportBuilderService>();
+builder.Services.AddScoped<ExcelImportService>();
+builder.Services.AddHttpClient();
 builder.Services.AddHttpClient<LarkService>();
 builder.Services.AddHostedService<ReportWorker>();
 

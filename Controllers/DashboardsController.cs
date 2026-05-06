@@ -1,10 +1,16 @@
-using System.Diagnostics;
+using AspnetCoreMvcFull.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using AspnetCoreMvcFull.Models;
 
 namespace AspnetCoreMvcFull.Controllers;
 
-public class DashboardsController : Controller
+public class DashboardsController(LiveMetricsRepository repo) : Controller
 {
   public IActionResult Index() => View();
+
+  public async Task<IActionResult> Live()
+  {
+    var data = await repo.GetMetrics();
+
+    return View(data);
+  }
 }

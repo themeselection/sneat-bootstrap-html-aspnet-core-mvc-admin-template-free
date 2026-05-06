@@ -1,0 +1,136 @@
+﻿@model AspnetCoreMvcFull.Models.LiveConfig
+
+@{
+    ViewData["Title"] = "Tạo Live Config";
+}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="mb-0">Tạo Live Config</h5>
+    </div>
+
+    <div class="card-body">
+        <form method="post">
+
+            <div class="row">
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="ProjectName" class="form-label">
+                        Project Name
+                    </label>
+
+                    <input asp-for="ProjectName"
+                           class="form-control"
+                           placeholder="Nhập tên project" />
+
+                    <span asp-validation-for="ProjectName"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="PostId" class="form-label">
+                        Post ID
+                    </label>
+
+                    <input asp-for="PostId"
+                           class="form-control"
+                           placeholder="Nhập Post ID" />
+
+                    <span asp-validation-for="PostId"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="CloseRate" class="form-label">
+                        Close Rate
+                    </label>
+
+                    <input asp-for="CloseRate"
+                           class="form-control"
+                           placeholder="0" />
+
+                    <span asp-validation-for="CloseRate"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="DeliveryRate" class="form-label">
+                        Delivery Rate
+                    </label>
+
+                    <input asp-for="DeliveryRate"
+                           class="form-control"
+                           placeholder="0" />
+
+                    <span asp-validation-for="DeliveryRate"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label asp-for="ImportCostRate" class="form-label">
+                        Import Cost Rate
+                    </label>
+
+                    <input asp-for="ImportCostRate"
+                           class="form-control"
+                           placeholder="0" />
+
+                    <span asp-validation-for="ImportCostRate"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="ShippingCostRate" class="form-label">
+                        Shipping Cost Rate
+                    </label>
+
+                    <input asp-for="ShippingCostRate"
+                           class="form-control"
+                           placeholder="0" />
+
+                    <span asp-validation-for="ShippingCostRate"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="col-md-6 mb-3">
+                    <label asp-for="CatseCost" class="form-label">
+                        Catse Cost
+                    </label>
+
+                    <input asp-for="CatseCost"
+                           class="form-control"
+                           placeholder="0" />
+
+                    <span asp-validation-for="CatseCost"
+                          class="text-danger"></span>
+                </div>
+
+                <div class="col-12 mb-4">
+                    <div class="form-check">
+                        <input asp-for="IsReporting"
+                               class="form-check-input" />
+
+                        <label asp-for="IsReporting"
+                               class="form-check-label">
+                            Reporting
+                        </label>
+                    </div>
+                </div>
+
+                <div class="col-12 d-flex gap-2">
+                    <button type="submit" class="btn btn-primary">
+                        <i class="bx bx-save"></i>
+                        Lưu
+                    </button>
+
+                    <a href="/LiveConfigs"
+                       class="btn btn-outline-secondary">
+                        <i class="bx bx-arrow-back"></i>
+                        Quay lại
+                    </a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>

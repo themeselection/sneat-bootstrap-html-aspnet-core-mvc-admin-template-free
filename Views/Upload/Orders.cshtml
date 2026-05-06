@@ -1,0 +1,62 @@
+﻿@{
+  ViewData["Title"] = "Upload Orders Excel";
+}
+
+<div class="card">
+  <div class="card-header">
+    <h5 class="mb-0">Upload Orders Excel</h5>
+  </div>
+  <div class="card-body">
+    @if (ViewBag.Error != null)
+    {
+      <div class="alert alert-danger alert-dismissible" role="alert">
+        <i class="bx bx-error-circle me-1"></i>
+        @ViewBag.Error
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close">
+        </button>
+      </div>
+    }
+    @if (ViewBag.Success != null)
+    {
+      <div class="alert alert-success alert-dismissible" role="alert">
+        <i class="bx bx-check-circle me-1"></i>
+        @ViewBag.Success
+        <button type="button"
+                class="btn-close"
+                data-bs-dismiss="alert"
+                aria-label="Close">
+        </button>
+      </div>
+    }
+    <form method="post"
+          enctype="multipart/form-data">
+      <div class="mb-4">
+        <label class="form-label">
+          File Excel
+        </label>
+        <input type="file"
+               name="file"
+               class="form-control"
+               accept=".xlsx,.xls" />
+        <div class="form-text">
+          Hỗ trợ file .xlsx, .xls
+        </div>
+      </div>
+      <div class="d-flex gap-2">
+        <button type="submit"
+                class="btn btn-primary">
+          <i class="bx bx-upload"></i>
+          Upload
+        </button>
+        <a href="/"
+           class="btn btn-outline-secondary">
+          <i class="bx bx-arrow-back"></i>
+          Quay lại
+        </a>
+      </div>
+    </form>
+  </div>
+</div>

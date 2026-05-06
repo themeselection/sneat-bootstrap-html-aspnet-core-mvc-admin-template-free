@@ -1,0 +1,118 @@
+﻿@model IEnumerable<AspnetCoreMvcFull.Models.LiveMetric>
+
+@{
+    ViewData["Title"] = "Live Dashboard";
+}
+
+<div class="card">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <div>
+            <h5 class="mb-0">Live Dashboard</h5>
+            <small class="text-muted">
+                Theo dõi hiệu suất LIVE theo thời gian thực
+            </small>
+        </div>
+    </div>
+
+    <div class="table-responsive text-nowrap">
+        <table class="table table-hover align-middle mb-0">
+
+            <thead class="table-light">
+                <tr>
+                    <th>Project</th>
+                    <th>Post ID</th>
+                    <th>Revenue</th>
+                    <th>Spend</th>
+                    <th>Profit</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-border-bottom-0">
+
+            @foreach(var item in Model)
+            {
+                var actualRevenue =
+                    item.TotalRevenue
+                    * (item.CloseRate / 100)
+                    * (item.DeliveryRate / 100);
+
+                var importCost =
+                    actualRevenue
+                    * (item.ImportCostRate / 100);
+
+                var shippingCost =
+                    actualRevenue
+                    * (item.ShippingCostRate / 100);
+
+                var profit =
+                    actualRevenue
+                    - item.TotalSpend
+                    - importCost
+                    - shippingCost
+                    - item.CatseCost;
+
+                var isProfit = profit >= 0;
+
+                <tr>
+
+                    <td>
+                        <strong>@item.ProjectName</strong>
+                    </td>
+
+                    <td>
+                        <span class="badge bg-label-secondary">
+                            @item.PostId
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="fw-semibold text-success">
+                            @item.TotalRevenue.ToString("N0")
+                        </span>
+                    </td>
+
+                    <td>
+                        <span class="fw-semibold text-danger">
+                            @item.TotalSpend.ToString("N0")
+                        </span>
+                    </td>
+
+                    <td>
+                        @if (isProfit)
+                        {
+                            <span class="badge bg-label-success">
+                                +@($"{profit:N0} đ")
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-label-danger">
+                              @($"{profit:N0} đ")
+                            </span>
+                        }
+                    </td>
+
+                    <td>
+                        @if (isProfit)
+                        {
+                            <span class="badge bg-success">
+                                PROFIT
+                            </span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">
+                                LOSS
+                            </span>
+                        }
+                    </td>
+
+                </tr>
+            }
+
+            </tbody>
+
+        </table>
+    </div>
+</div>

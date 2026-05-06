@@ -1,0 +1,49 @@
+﻿@model AspnetCoreMvcFull.Models.LiveAd
+
+@{
+  ViewData["Title"] = "Thêm Ads";
+}
+
+<div class="card">
+  <div class="card-header">
+    <h5 class="mb-0">Thêm Ads</h5>
+  </div>
+
+  <div class="card-body">
+    <form method="post">
+
+      <input asp-for="LiveConfigId" type="hidden" />
+
+      <div class="row">
+
+        <div class="col-md-12 mb-4">
+          <label asp-for="AdId" class="form-label">
+            Ad ID
+          </label>
+
+          <input asp-for="AdId"
+                 class="form-control"
+                 placeholder="Nhập Ad ID" />
+
+          <span asp-validation-for="AdId"
+                class="text-danger"></span>
+        </div>
+
+        <div class="col-12 d-flex gap-2">
+          <button type="submit" class="btn btn-primary">
+            <i class="bx bx-save"></i>
+            Lưu
+          </button>
+
+          <a href="/LiveConfigs"
+             class="btn btn-outline-secondary">
+            <i class="bx bx-arrow-back"></i>
+            Quay lại
+          </a>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+</div>

@@ -1,0 +1,73 @@
+﻿@model IEnumerable<AspnetCoreMvcFull.Models.LiveConfig>
+
+@{
+    ViewData["Title"] = "Live Configs";
+}
+
+<div class="card">
+    <div class="d-flex align-items-center justify-content-between">
+        <h5 class="card-header mb-0">
+            Live Configs
+        </h5>
+
+        <div class="me-4">
+            <a href="/LiveConfigs/Create" class="btn btn-primary">
+                <i class="bx bx-plus"></i>
+                Tạo mới
+            </a>
+        </div>
+    </div>
+
+    <div class="table-responsive text-nowrap">
+        <table class="table table-hover">
+            <thead class="table-light">
+                <tr>
+                    <th>Project</th>
+                    <th>Post ID</th>
+                    <th>Reporting</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+
+            <tbody class="table-border-bottom-0">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            <strong>@item.ProjectName</strong>
+                        </td>
+
+                        <td>
+                            <span class="badge bg-label-secondary">
+                                @item.PostId
+                            </span>
+                        </td>
+
+                        <td>
+                            @if (item.IsReporting)
+                            {
+                                <span class="badge bg-label-success">
+                                    Active
+                                </span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-label-danger">
+                                    Disabled
+                                </span>
+                            }
+                        </td>
+
+                        <td class="text-center">
+                            <a href="/LiveConfigs/AddAd/@item.Id"
+                               class="btn btn-sm btn-outline-primary">
+                                <i class="bx bx-plus-circle"></i>
+                                Add Ads
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
